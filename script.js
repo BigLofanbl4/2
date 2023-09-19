@@ -15,6 +15,8 @@ function Calculator() {
     if (!this.methods[op] || isNaN(a) || isNaN(b)) {
       return NaN;
     }
+
+    return this.methods[op](a, b);
   }
 }
 

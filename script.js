@@ -21,6 +21,10 @@ function Calculator() {
 
   this.addMethod = function(name, func) {
     this.methods[name] = func;
+  }
 }
-}
+
+let powerCalc = new Calculator;
+
+powerCalc.addMethod("/", (a, b) => a / b);
 
